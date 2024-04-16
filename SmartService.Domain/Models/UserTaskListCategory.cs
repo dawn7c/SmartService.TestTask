@@ -6,9 +6,8 @@ using System.Threading.Tasks;
 
 namespace SmartService.Domain.Models
 {
-    public class TaskUserCacheResult
+    public class UserTaskListCategory
     {
-        public int TaskID { get; set; }
         public int UserID { get; set; }
         public byte TaskListCategoryID { get; set; }
     }

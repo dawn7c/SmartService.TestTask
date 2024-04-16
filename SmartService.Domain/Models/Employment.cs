@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace SmartService.Domain.Models
 {
-    public class UserWorkType
+    public class Employment
     {
-        public short TenantID { get; set; }
         public int UserID { get; set; }
-        public short WorkTypeID { get; set; }
-        public DateTime? Deleted { get; set; }
+        public short CompanyID { get; set; }
+        public byte TaskListCategoryID { get; set; }
     }
 }

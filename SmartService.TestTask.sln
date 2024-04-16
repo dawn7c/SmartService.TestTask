@@ -5,6 +5,22 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Domain", "SmartService.Domain\SmartService.Domain.csproj", "{D658526A-E832-4F06-B32E-9A891C0CA591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.DataAccess", "SmartService.DataAccess\SmartService.DataAccess.csproj", "{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCF28732-104F-4BDA-A75D-097E25093BEA} = {FCF28732-104F-4BDA-A75D-097E25093BEA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Api", "SmartService.Api\SmartService.Api.csproj", "{32E56BD6-0866-496F-A764-A5720D18ECD7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D658526A-E832-4F06-B32E-9A891C0CA591} = {D658526A-E832-4F06-B32E-9A891C0CA591}
+		{FCF28732-104F-4BDA-A75D-097E25093BEA} = {FCF28732-104F-4BDA-A75D-097E25093BEA}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Application", "SmartService.Application\SmartService.Application.csproj", "{FCF28732-104F-4BDA-A75D-097E25093BEA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D658526A-E832-4F06-B32E-9A891C0CA591} = {D658526A-E832-4F06-B32E-9A891C0CA591}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +31,18 @@ Global
 		{D658526A-E832-4F06-B32E-9A891C0CA591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D658526A-E832-4F06-B32E-9A891C0CA591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D658526A-E832-4F06-B32E-9A891C0CA591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32E56BD6-0866-496F-A764-A5720D18ECD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32E56BD6-0866-496F-A764-A5720D18ECD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32E56BD6-0866-496F-A764-A5720D18ECD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32E56BD6-0866-496F-A764-A5720D18ECD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

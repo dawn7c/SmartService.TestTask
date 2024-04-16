@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace SmartService.Domain.Models
 {
-    public class TaskOnlineAssigned
+    public class TaskUserCache
     {
-        public short TenantID { get; set; }
         public int TaskID { get; set; }
-        public int AssignedTo { get; set; }
+        public int UserID { get; set; }
+        public byte TaskListCategoryID { get; set; }
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace SmartService.Domain.Models
 {
-    public class UserListCategoryResult
+    public class ListCategory
     {
-        public int UserID { get; set; }
-        public byte ListCategoryID { get; set; }
+        public byte ID { get; set; }
+        public short PermissionExtID { get; set; }
     }
 }
