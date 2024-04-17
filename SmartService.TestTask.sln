@@ -3,23 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Domain", "SmartService.Domain\SmartService.Domain.csproj", "{D658526A-E832-4F06-B32E-9A891C0CA591}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartService.Domain", "SmartService.Domain\SmartService.Domain.csproj", "{D658526A-E832-4F06-B32E-9A891C0CA591}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.DataAccess", "SmartService.DataAccess\SmartService.DataAccess.csproj", "{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartService.DataAccess", "SmartService.DataAccess\SmartService.DataAccess.csproj", "{EB3B35DC-F2BF-4D47-9A35-83A8850A4CDC}"
 	ProjectSection(ProjectDependencies) = postProject
 		{FCF28732-104F-4BDA-A75D-097E25093BEA} = {FCF28732-104F-4BDA-A75D-097E25093BEA}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Api", "SmartService.Api\SmartService.Api.csproj", "{32E56BD6-0866-496F-A764-A5720D18ECD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartService.Api", "SmartService.Api\SmartService.Api.csproj", "{32E56BD6-0866-496F-A764-A5720D18ECD7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D658526A-E832-4F06-B32E-9A891C0CA591} = {D658526A-E832-4F06-B32E-9A891C0CA591}
 		{FCF28732-104F-4BDA-A75D-097E25093BEA} = {FCF28732-104F-4BDA-A75D-097E25093BEA}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Application", "SmartService.Application\SmartService.Application.csproj", "{FCF28732-104F-4BDA-A75D-097E25093BEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartService.Application", "SmartService.Application\SmartService.Application.csproj", "{FCF28732-104F-4BDA-A75D-097E25093BEA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D658526A-E832-4F06-B32E-9A891C0CA591} = {D658526A-E832-4F06-B32E-9A891C0CA591}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartService.Tests", "SmartService.Tests\SmartService.Tests.csproj", "{5AC830A3-A7E7-421E-82F7-608D9A24E3D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCF28732-104F-4BDA-A75D-097E25093BEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC830A3-A7E7-421E-82F7-608D9A24E3D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC830A3-A7E7-421E-82F7-608D9A24E3D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC830A3-A7E7-421E-82F7-608D9A24E3D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC830A3-A7E7-421E-82F7-608D9A24E3D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

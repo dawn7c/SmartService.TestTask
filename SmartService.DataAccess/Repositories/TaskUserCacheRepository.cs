@@ -33,7 +33,6 @@ namespace SmartService.DataAccess.Repositories
                 .ToList<object>();
 
             return await Task.FromResult(aggregatedTaskUserCache);
-
         }
     }
 }

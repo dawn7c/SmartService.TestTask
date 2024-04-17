@@ -9,16 +9,18 @@ namespace SmartService.Api.Controllers
     public class UserListCategoryController : ControllerBase
     {
         private readonly IUserListCategoryRepository _userListCategoryRepository;
+        private readonly Application.Validation.Validator _validator;
 
         public UserListCategoryController(IUserListCategoryRepository userListCategoryRepository)
         {
             _userListCategoryRepository = userListCategoryRepository;
+            _validator = new Application.Validation.Validator();
         }
 
         [HttpGet]
         public async Task<IActionResult> GetUserListCategories(short tenantID)
         {
-            
+            _validator.CheckForNull(tenantID);
             var userListCategories = await _userListCategoryRepository.UserListCategoriesAsync(tenantID);
             return Ok(userListCategories);
         }
